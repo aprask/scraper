@@ -1,0 +1,5 @@
+<form method="post" action="{% url 'scrape_form' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Scrape Data</button>
+</form>

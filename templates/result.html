@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Scraped Data</h2>
+    <ul>
+        {% for item in scraped_data %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
